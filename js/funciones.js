@@ -1,3 +1,5 @@
+//Funciones AJAX
+    //Funcion para llamado a home
 function fnAjax(url){       
     var ajaxRequest = new XMLHttpRequest();
     ajaxRequest.onreadystatechange = function(){
@@ -8,3 +10,6 @@ function fnAjax(url){
     ajaxRequest.open("GET",url,true);
     ajaxRequest.send(null);
 }
+
+//JQUERY VALIDACIONES
+
