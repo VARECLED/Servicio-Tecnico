@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Lista de prestamos</title>
+    <title>Buscar prestamos</title>
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -32,11 +32,11 @@
 
 </head>
 <body>
-
+ 
 		<!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS
+                    <i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugiat est ducimus inventore, repellendus deserunt cum aliquam dignissimos, consequuntur molestiae perferendis quae, impedit doloribus harum necessitatibus magnam voluptatem voluptatum alias!
@@ -45,23 +45,64 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
+                        <a href="#" onclick="fnAjax('reservation-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
                     </li>
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('reservation-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS</a>
+                        <a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS</a>
                     </li>
                     <li>
-                        <a href="#"onclick="fnAjax('reservation-search.html?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS</a>
+                        <a class="active" href="#"onclick="fnAjax('reservation-search.php?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-pending.html?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS PENDIENTES</a>
+                        <a href="#" onclick="fnAjax('reservation-pending.php?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS PENDIENTES</a>
                     </li>
                 </ul>
             </div>
             
             <!--CONTENT-->
-            
+            <div class="container-fluid">
+				<form class="form-neon" action="">
+					<div class="container-fluid">
+						<div class="row justify-content-md-center">
+							<div class="col-12 col-md-6">
+								<div class="form-group">
+									<label for="inputSearch" class="bmd-label-floating">¿Qué prestamo estas buscando?</label>
+									<input type="text" class="form-control" name="busqueda_reservation" id="inputSearch" maxlength="30">
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-center" style="margin-top: 40px;">
+									<button type="submit" class="btn btn-raised btn-info"><i class="fas fa-search"></i> &nbsp; BUSCAR</button>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			
 			<div class="container-fluid">
+				<form action="">
+					<input type="hidden" name="eliminar_busqueda_reservation" value="eliminar">
+					<div class="container-fluid">
+						<div class="row justify-content-md-center">
+							<div class="col-12 col-md-6">
+								<p class="text-center" style="font-size: 20px;">
+									Resultados de la busqueda <strong>“Buscar”</strong>
+								</p>
+							</div>
+							<div class="col-12">
+								<p class="text-center" style="margin-top: 20px;">
+									<button type="submit" class="btn btn-raised btn-danger"><i class="far fa-trash-alt"></i> &nbsp; ELIMINAR BÚSQUEDA</button>
+								</p>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+			 <div class="container-fluid">
 				<div class="table-responsive">
 					<table class="table table-dark table-sm">
 						<thead>
@@ -90,12 +131,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -119,12 +160,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -148,12 +189,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -177,12 +218,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -211,7 +252,7 @@
 					</ul>
 				</nav>
 			</div>
-    	
+
 	<!--=============================================
 	=            Include JavaScript files           =
 	==============================================-->

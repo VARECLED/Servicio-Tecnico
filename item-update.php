@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Nuevo item</title>
+    <title>Actualizar item</title>
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -34,11 +34,11 @@
 
 
 <body>
- 
+  
 		<!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ITEM
+                    <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR ITEM
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laudantium necessitatibus eius iure adipisci modi distinctio. Earum repellat iste et aut, ullam, animi similique sed soluta tempore cum quis corporis!
@@ -47,13 +47,13 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('item-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR SERVICIO</a>
+                        <a href="#" onclick="fnAjax('item-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR SERVICIO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('item-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE SERVICIO</a>
+                        <a href="#" onclick="fnAjax('item-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE SERVICIO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('item-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR SERVICIO</a>
+                        <a href="#" onclick="fnAjax('item-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR SERVICIO</a>
                     </li>
                 </ul>
             </div>
@@ -105,14 +105,12 @@
 					</fieldset>
 					<br><br><br>
 					<p class="text-center" style="margin-top: 40px;">
-						<button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
-						&nbsp; &nbsp;
-						<button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
+						<button type="submit" class="btn btn-raised btn-success btn-sm"><i class="fas fa-sync-alt"></i> &nbsp; ACTUALIZAR</button>
 					</p>
 				</form>
 			</div>
-    
-    	
+        </section>
+
 	<!--=============================================
 	=            Include JavaScript files           =
 	==============================================-->

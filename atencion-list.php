@@ -48,13 +48,13 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN DE EQUIPO</a>
+                        <a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN DE EQUIPO</a>
                     </li>
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('atencion-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
+                        <a class="active" href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ATENCIÓN DE EQUIPO</a>
+                        <a href="#" onclick="fnAjax('atencion-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ATENCIÓN DE EQUIPO</a>
                     </li>
                 </ul>
             </div>
@@ -80,7 +80,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>20</td>
 								<td>
-                                    <a href="item-update.html" class="btn btn-success">
+                                    <a href="item-update.php" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>
@@ -98,7 +98,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>57</td>
 								<td>
-                                    <a href="item-update.html" class="btn btn-success">
+                                    <a href="item-update.php" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>
@@ -116,7 +116,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>81</td>
 								<td>
-                                    <a href="item-update.html" class="btn btn-success">
+                                    <a href="item-update.php" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>
@@ -134,7 +134,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>90</td>
 								<td>
-                                    <a href="#" onclick="fnAjax('atencion-update.html?v=89234982734');" class="btn btn-success">
+                                    <a href="#" onclick="fnAjax('atencion-update.php?v=89234982734');" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>

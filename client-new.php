@@ -49,20 +49,20 @@
 			<div class="container-fluid">
 				<ul class="full-box list-unstyled page-nav-tabs">
 					<li>
-						<a class="active" href="#" onclick="fnAjax('client-new.html?v=89234982734');" ><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR CLIENTE</a>
+						<a class="active" href="#" onclick="fnAjax('client-new.php?v=89234982734');" ><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR CLIENTE</a>
 					</li>
 					<li>
-						<a href="#" onclick="fnAjax('client-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE CLIENTES</a>
+						<a href="#" onclick="fnAjax('client-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE CLIENTES</a>
 					</li>
 					<li>
-						<a href="#" onclick="fnAjax('client-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE</a>
+						<a href="#" onclick="fnAjax('client-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE</a>
 					</li>
 				</ul>	
 			</div>
 			
 			<!-- Content here-->
 			<div class="container-fluid">
-				<form action="" class="form-neon" autocomplete="off">
+				<form action="cliente-registrar.php" method="POST" class="form-neon" autocomplete="off">
 					<fieldset>
 						<legend><i class="fas fa-user"></i> &nbsp; Información básica</legend>
 						<div class="container-fluid">
@@ -70,13 +70,13 @@
 								<div class="col-12 col-md-4">
 									<div class="form-group">
 										<label for="cliente_dni" class="bmd-label-floating">Cédula</label>
-										<input type="text" pattern="[a-zA-Z0-9-]{1,27}" class="form-control" name="cliente_dni" id="cliente_dni" maxlength="27" required>
+										<input type="text" pattern="[a-zA-Z0-9-]{1,30}" class="form-control" name="cliente_cedula" id="cliente_cedula" maxlength="27" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-8">
 									<div class="form-group">
 										<label for="cliente_nombre" class="bmd-label-floating">Nombre y Apellido</label>
-										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,40}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="40" required>
+										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="40" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-12">
@@ -88,7 +88,7 @@
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="cliente_apellido" class="bmd-label-floating">Email</label>
-										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,40}" class="form-control" name="cliente_apellido" id="cliente_apellido" maxlength="40" required>
+										<input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control" name="cliente_email" id="cliente_email" maxlength="40" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">

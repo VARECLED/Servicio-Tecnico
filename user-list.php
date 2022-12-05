@@ -3,10 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>CB | Buscar clientes</title>
-
-	<!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
+	<title>Lista usuarios</title>
 
 	<!-- Normalize V8.0.1 -->
 	<link rel="stylesheet" href="./css/normalize.css">
@@ -39,81 +36,40 @@
 		<!-- Page header -->
 			<div class="full-box page-header">
 				<h3 class="text-left">
-					<i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE
+					<i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE USUARIOS
 				</h3>
 				<p class="text-justify">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum rerum animi natus beatae ex. Culpa blanditiis tempore amet alias placeat, obcaecati quaerat ullam, sunt est, odio aut veniam ratione.
 				</p>
 			</div>
-
+			
 			<div class="container-fluid">
 				<ul class="full-box list-unstyled page-nav-tabs">
 					<li>
-						<a href="#" onclick="fnAjax('client-new.html?v=89234982734');" ><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR CLIENTE</a>
+						<a href="#" onclick="fnAjax('user-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO USUARIO</a>
 					</li>
 					<li>
-						<a href="#" onclick="fnAjax('client-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE CLIENTES</a>
+						<a class="active" href="#" onclick="fnAjax('user-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE USUARIOS</a>
 					</li>
 					<li>
-						<a class="active" href="#" onclick="fnAjax('client-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE</a>
+						<a href="#" onclick="fnAjax('user-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR USUARIO</a>
 					</li>
 				</ul>	
 			</div>
 			
-			<!-- Content here-->
-			<div class="container-fluid">
-				<form class="form-neon" action="">
-					<div class="container-fluid">
-						<div class="row justify-content-md-center">
-							<div class="col-12 col-md-6">
-								<div class="form-group">
-									<label for="inputSearch" class="bmd-label-floating">¿Qué cliente estas buscando?</label>
-									<input type="text" class="form-control" name="busqueda-" id="inputSearch" maxlength="30">
-								</div>
-							</div>
-							<div class="col-12">
-								<p class="text-center" style="margin-top: 40px;">
-									<button type="submit" class="btn btn-raised btn-info"><i class="fas fa-search"></i> &nbsp; BUSCAR</button>
-								</p>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-
-			
-			<div class="container-fluid">
-				<form action="">
-					<input type="hidden" name="eliminar-busqueda" value="eliminar">
-					<div class="container-fluid">
-						<div class="row justify-content-md-center">
-							<div class="col-12 col-md-6">
-								<p class="text-center" style="font-size: 20px;">
-									Resultados de la busqueda <strong>“Buscar”</strong>
-								</p>
-							</div>
-							<div class="col-12">
-								<p class="text-center" style="margin-top: 20px;">
-									<button type="submit" class="btn btn-raised btn-danger"><i class="far fa-trash-alt"></i> &nbsp; ELIMINAR BÚSQUEDA</button>
-								</p>
-							</div>
-						</div>
-					</div>
-				</form>
-			</div>
-
-
+			<!-- Content -->
 			<div class="container-fluid">
 				<div class="table-responsive">
 					<table class="table table-dark table-sm">
 						<thead>
 							<tr class="text-center roboto-medium">
 								<th>#</th>
-								<th>Cédula</th>
+								<th>DNI</th>
 								<th>NOMBRE</th>
-								<th>DIRECCIÓN</th>
+								<th>APELLIDO</th>
+								<th>TELÉFONO</th>
+								<th>USUARIO</th>
 								<th>EMAIL</th>
-								<th>TELEFONO</th>
 								<th>ACTUALIZAR</th>
 								<th>ELIMINAR</th>
 							</tr>
@@ -121,13 +77,77 @@
 						<tbody>
 							<tr class="text-center" >
 								<td>1</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL CLIENTE</td>
-								<td>DIRECCIÓN DEL CLIENTE</td>
-								<td>EMAIL DEL CLIENTE</td>
-								<td>1234567890</td>
+								<th>03045643</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>APELLIDO DE USUARIO</th>
+								<th>2345456</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>ADMIN@ADMIN.COM</th>
 								<td>
-									<a href="client-update.html" class="btn btn-success">
+									<a href="user-update.php" class="btn btn-success">
+	  									<i class="fas fa-sync-alt"></i>	
+									</a>
+								</td>
+								<td>
+									<form action="">
+										<button type="button" class="btn btn-warning">
+		  									<i class="far fa-trash-alt"></i>
+										</button>
+									</form>
+								</td>
+							</tr>
+							<tr class="text-center" >
+								<td>2</td>
+								<th>03045643</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>APELLIDO DE USUARIO</th>
+								<th>2345456</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>ADMIN@ADMIN.COM</th>
+								<td>
+									<a href="user-update.php" class="btn btn-success">
+	  									<i class="fas fa-sync-alt"></i>	
+									</a>
+								</td>
+								<td>
+									<form action="">
+										<button type="button" class="btn btn-warning">
+		  									<i class="far fa-trash-alt"></i>
+										</button>
+									</form>
+								</td>
+							</tr>
+							<tr class="text-center" >
+								<td>3</td>
+								<th>03045643</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>APELLIDO DE USUARIO</th>
+								<th>2345456</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>ADMIN@ADMIN.COM</th>
+								<td>
+									<a href="user-update.php" class="btn btn-success">
+	  									<i class="fas fa-sync-alt"></i>	
+									</a>
+								</td>
+								<td>
+									<form action="">
+										<button type="button" class="btn btn-warning">
+		  									<i class="far fa-trash-alt"></i>
+										</button>
+									</form>
+								</td>
+							</tr>
+							<tr class="text-center" >
+								<td>4</td>
+								<th>03045643</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>APELLIDO DE USUARIO</th>
+								<th>2345456</th>
+								<th>NOMBRE DE USUARIO</th>
+								<th>ADMIN@ADMIN.COM</th>
+								<td>
+									<a href="user-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
@@ -157,8 +177,6 @@
 				</nav>
 			</div>
 
-	
-	
 	<!--=============================================
 	=            Include JavaScript files           =
 	==============================================-->

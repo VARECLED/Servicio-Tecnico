@@ -1,3 +1,7 @@
+<?php
+	include("session.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -49,13 +53,13 @@
 			<div class="container-fluid">
 				<ul class="full-box list-unstyled page-nav-tabs">
 					<li>
-						<a href="#" onclick="fnAjax('client-new.html?v=89234982734');" ><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR CLIENTE</a>
+						<a href="#" onclick="fnAjax('client-new.php?v=89234982734');" ><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR CLIENTE</a>
 					</li>
 					<li>
-						<a class="active" href="#" onclick="fnAjax('client-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE CLIENTES</a>
+						<a class="active" href="#" onclick="fnAjax('client-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE CLIENTES</a>
 					</li>
 					<li>
-						<a href="#" onclick="fnAjax('client-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE</a>
+						<a href="#" onclick="fnAjax('client-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR CLIENTE</a>
 					</li>
 				</ul>	
 			</div>
@@ -85,7 +89,7 @@
 								<td>EMAIL DEL CLIENTE</td>
 								<td>1234567890</td>
 								<td>
-									<a href="#" onclick="fnAjax('client-update.html?v=89234982734');" class="btn btn-success">
+									<a href="#" onclick="fnAjax('client-update.php?v=89234982734');" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
@@ -98,7 +102,7 @@
 								</td>
 							</tr>
 						</tbody>
-					</table>
+					</table> 
 				</div>
 				<nav aria-label="Page navigation example">
 					<ul class="pagination justify-content-center">

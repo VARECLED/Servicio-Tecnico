@@ -47,13 +47,13 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('item-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR SERVICIO</a>
+                        <a href="#" onclick="fnAjax('item-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR SERVICIO</a>
                     </li>
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('item-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE SERVICIO</a>
+                        <a class="active" href="#" onclick="fnAjax('item-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE SERVICIO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('item-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR SERVICIO</a>
+                        <a href="#" onclick="fnAjax('item-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR SERVICIO</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>20</td>
 								<td>
-                                    <a href="#" onclick="fnAjax('item-update.html?v=89234982734');" class="btn btn-success">
+                                    <a href="#" onclick="fnAjax('item-update.php?v=89234982734');" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>

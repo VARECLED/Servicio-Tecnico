@@ -48,13 +48,13 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('atencion-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN A EQUIPO</a>
+                        <a class="active" href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN A EQUIPO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
+                        <a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ATENCIÓN DE EQUIPO</a>
+                        <a href="#" onclick="fnAjax('atencion-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ATENCIÓN DE EQUIPO</a>
                     </li>
                 </ul>
             </div>

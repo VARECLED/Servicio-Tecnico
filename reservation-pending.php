@@ -47,16 +47,16 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
+                        <a href="#" onclick="fnAjax('reservation-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS</a>
+                        <a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS</a>
                     </li>
                     <li>
-                        <a href="#"onclick="fnAjax('reservation-search.html?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS</a>
+                        <a href="#"onclick="fnAjax('reservation-search.php?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS</a>
                     </li>
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('reservation-pending.html?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS PENDIENTES</a>
+                        <a class="active" href="#" onclick="fnAjax('reservation-pending.php?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS PENDIENTES</a>
                     </li>
                 </ul>
             </div>
@@ -91,12 +91,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -120,12 +120,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -149,12 +149,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>
@@ -178,12 +178,12 @@
 									</a>
 								</td>
 								<td>
-									<a href="reservation-update.html" class="btn btn-success">
+									<a href="reservation-update.php" class="btn btn-success">
 	  									<i class="fas fa-sync-alt"></i>	
 									</a>
 								</td>
 								<td>
-									<a href="payment.html" class="btn btn-info">
+									<a href="payment.php" class="btn btn-info">
 	  									<i class="fas fa-dollar-sign"></i>	
 									</a>
 								</td>

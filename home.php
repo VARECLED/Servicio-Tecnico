@@ -62,13 +62,13 @@
 							<a href="#" class="nav-btn-submenu"><i class="fas fa-users fa-fw"></i> &nbsp; Clientes <i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('client-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Cliente</a>
+									<a href="#" onclick="fnAjax('client-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Cliente</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('client-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de clientes</a>
+									<a href="#" onclick="fnAjax('client-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de clientes</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('client-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar cliente</a>
+									<a href="#" onclick="fnAjax('client-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar cliente</a>
 								</li>
 							</ul>
 						</li>
@@ -77,13 +77,13 @@
 							<a href="#" class="nav-btn-submenu"><i class="fas fa-tools fa-fw"></i> &nbsp; Servicio <i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('item-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Servicio</a>
+									<a href="#" onclick="fnAjax('item-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Servicio</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('item-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Servicio</a>
+									<a href="#" onclick="fnAjax('item-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Servicio</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('item-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Servicio</a>
+									<a href="#" onclick="fnAjax('item-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Servicio</a>
 								</li>
 							</ul>
 						</li>
@@ -92,13 +92,13 @@
 							<a href="#" class="nav-btn-submenu"><i class="fas fa-exclamation-triangle fa-fw"></i> &nbsp; Atencion a Equipos<i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Servicio</a>
+									<a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Servicio</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Servicio</a>
+									<a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Servicio</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar servicio</a>
+									<a href="#" onclick="fnAjax('atencion-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar servicio</a>
 								</li>
 							</ul>
 						</li>
@@ -107,16 +107,16 @@
 							<a href="#" class="nav-btn-submenu"><i class="far fa-check-circle fa-fw"></i> &nbsp; Retiros <i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('reservation-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo Retiro</a>
+									<a href="#" onclick="fnAjax('reservation-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo Retiro</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('reservation-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Productos listos no retirados</a>
+									<a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Productos listos no retirados</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('reservation-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Retiro</a>
+									<a href="#" onclick="fnAjax('reservation-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Retiro</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('reservation-pending.html?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; Producto no retirados (30 dias)</a>
+									<a href="#" onclick="fnAjax('reservation-pending.php?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; Producto no retirados (30 dias)</a>
 								</li>
 							</ul>
 						</li>
@@ -125,13 +125,13 @@
 							<a href="#" class="nav-btn-submenu"><i class="fas  fa-user-secret fa-fw"></i> &nbsp; Usuarios <i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('user-new.html?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo usuario</a>
+									<a href="#" onclick="fnAjax('user-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Nuevo usuario</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('user-list.html?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de usuarios</a>
+									<a href="#" onclick="fnAjax('user-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de usuarios</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('user-search.html?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar usuario</a>
+									<a href="#" onclick="fnAjax('user-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar usuario</a>
 								</li>
 							</ul>
 						</li>
@@ -145,7 +145,7 @@
 				<a href="#" class="float-left show-nav-lateral">
 					<i class="fas fa-exchange-alt"></i>
 				</a>
-				<a href="#" onclick="fnAjax('user-update.html?v=89234982734');">
+				<a href="#" onclick="fnAjax('user-update.php?v=89234982734');">
 					<i class="fas fa-user-cog"></i>
 				</a>
 				<a href="logout.php" class="btn-exit-system">
@@ -167,7 +167,7 @@
 				<!-- Content -->
 				<div class="full-box tile-container">
 
-				<a href="#" onclick="fnAjax('client-list.html?v=89234982734');" class="tile">
+				<a href="#" onclick="fnAjax('client-list.php?v=89234982734');" class="tile">
 					<div class="tile-tittle">Clientes</div>
 					<div class="tile-icon">
 						<i class="fas fa-users fa-fw"></i>
@@ -175,7 +175,7 @@
 					</div>
 				</a>
 
-				<a href="#" onclick="fnAjax('item-list.html?v=89234982734');" class="tile">
+				<a href="#" onclick="fnAjax('item-list.php?v=89234982734');" class="tile">
 					<div class="tile-tittle">Servicio</div>
 					<div class="tile-icon">
 						<i class="fas fa-tools fa-fw"></i>
@@ -183,7 +183,7 @@
 					</div>
 				</a>
 
-				<a href="#" onclick="fnAjax('atencion-list.html?v=89234982734');" class="tile">
+				<a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');" class="tile">
 					<div class="tile-tittle">Atención</div>
 					<div class="tile-icon">
 						<i class="fas fa-exclamation-triangle fa-fw"></i>
@@ -191,7 +191,7 @@
 					</div>
 				</a>
 
-				<a href="#" onclick="fnAjax('reservation-list.html?v=89234982734');" class="tile">
+				<a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');" class="tile">
 					<div class="tile-tittle">Retiros</div>
 					<div class="tile-icon">
 						<i class="fas fa-check-circle fa-fw"></i>
@@ -199,7 +199,7 @@
 					</div>
 				</a>
 
-				<a href="#" onclick="fnAjax('user-list.html?v=89234982734');" class="tile">
+				<a href="#" onclick="fnAjax('user-list.php?v=89234982734');" class="tile">
 					<div class="tile-tittle">Usuarios</div>
 					<div class="tile-icon">
 						<i class="fas fa-user-secret fa-fw"></i>
