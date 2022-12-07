@@ -1,3 +1,8 @@
+<?php
+	include("session.php");
+	include("config.php");
+	$id = $_GET['id'];  
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -62,41 +67,56 @@
 			
 			<!-- Content here-->
 			<div class="container-fluid">
-				<form action="" class="form-neon" autocomplete="off">
+				<form action="cliente-actualizar.php" method="POST" class="form-neon" autocomplete="off">
 					<fieldset>
 						<legend><i class="fas fa-user"></i> &nbsp; Información básica</legend>
 						<div class="container-fluid">
 							<div class="row">
+
+							<?php
+								$busqueda="SELECT persona.IdPersona, cliente.Cedula, persona.nombreC, persona.Direccion, persona.Correoe, telefono.Telefono 
+								FROM persona, cliente, telefono 
+								WHERE persona.IdPersona = $id
+								AND persona.IdPersona = cliente.IdPersona 
+								AND persona.IdPersona = telefono.IdPersona;";
+								$result = mysqli_query($mysqli, $busqueda);
+								while($row = mysqli_fetch_array($result)){?>
+
 								<div class="col-12 col-md-4">
 									<div class="form-group">
 										<label for="cliente_dni" class="bmd-label-floating">Cédula</label>
-										<input type="text" pattern="[a-zA-Z0-9-]{1,27}" class="form-control" name="cliente_dni" id="cliente_dni" maxlength="27">
+										<?php echo "<input type='text' pattern='[a-zA-Z0-9-]{1,27}' value='".$row['Cedula']."' class='form-control' name='cliente_cedula' id='cliente_cedula' maxlength='27'>";?>
 									</div>
 								</div>
 								<div class="col-12 col-md-8">
 									<div class="form-group">
 										<label for="cliente_nombre" class="bmd-label-floating">Nombre y Apellido</label>
-										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,40}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="40">
+										<?php echo "<input type='text' pattern='[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}' value='".$row['nombreC']."' class='form-control' name='cliente_nombre' id='cliente_nombre' maxlength='40'>";?>
 									</div>
 								</div>
 								<div class="col-12 col-md-12">
 									<div class="form-group">
 										<label for="cliente_direccion" class="bmd-label-floating">Dirección</label>
-										<input type="text" pattern="[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ#- ]{1,150}" class="form-control" name="cliente_direccion" id="cliente_direccion" maxlength="150">
+										<?php echo "<input type='text' pattern='[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ#- ]{1,150}' value='".$row['Direccion']."' class='form-control' name='cliente_direccion' id='cliente_direccion' maxlength='150'>";?>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="cliente_apellido" class="bmd-label-floating">Email</label>
-										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,40}" class="form-control" name="cliente_apellido" id="cliente_apellido" maxlength="40">
+										<?php echo "<input type='text' pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'value='".$row['Correoe']."' class='form-control' name='cliente_email' id='cliente_email' maxlength='40'>";?>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="cliente_telefono" class="bmd-label-floating">Teléfono</label>
-										<input type="text" pattern="[0-9()+]{1,20}" class="form-control" name="cliente_telefono" id="cliente_telefono" maxlength="20">
+										<?php echo "<input type='text' pattern='[0-9()+]{1,20}' class='form-control' value='".$row['Telefono']."' name='cliente_telefono' id='cliente_telefono' maxlength='20'>";?>
 									</div>
 								</div>
+
+								<?php } ?>
+
+							
+
 							</div>
 						</div>
 					</fieldset>

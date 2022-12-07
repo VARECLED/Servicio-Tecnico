@@ -76,7 +76,7 @@
 								<div class="col-12 col-md-8">
 									<div class="form-group">
 										<label for="cliente_nombre" class="bmd-label-floating">Nombre y Apellido</label>
-										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="40" required>
+										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="100" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-12">
@@ -94,7 +94,7 @@
 								<div class="col-12 col-md-6">
 									<div class="form-group">
 										<label for="cliente_telefono" class="bmd-label-floating">Teléfono</label>
-										<input type="text" pattern="[0-9()+]{1,20}" class="form-control" name="cliente_telefono" id="cliente_telefono" maxlength="20" required>
+										<input type="text" pattern="[0-9()+]{1,10}" class="form-control" name="cliente_telefono" id="cliente_telefono" maxlength="10" required>
 									</div>
 								</div>
 							</div>
@@ -107,7 +107,7 @@
 						<button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
 					</p>
 				</form>
-			</div>	
+			</div>	 
 
 	<!--=============================================
 	=            Include JavaScript files           =

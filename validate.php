@@ -17,7 +17,7 @@
     }else{
         echo '<script>';
 	    echo 'alert("USUARIO NO ENCONTRADO");';
-	    echo 'window.location="index.php";';
+	    echo 'window.location="index.html";';
 	    echo '</script>';
         //header('Location: index.php');
     }

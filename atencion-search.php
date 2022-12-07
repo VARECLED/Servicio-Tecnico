@@ -175,7 +175,7 @@
 								<td>NOMBRE DEL ITEM</td>
 								<td>90</td>
 								<td>
-                                    <a href="item-update.php" class="btn btn-success">
+                                    <a href="item-update.php/" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>

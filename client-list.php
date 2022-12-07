@@ -1,5 +1,11 @@
 <?php
+	include("config.php");
 	include("session.php");
+
+	$datos=mysqli_query($mysqli,"SELECT persona.IdPersona, cliente.Cedula, persona.nombreC, persona.Direccion, persona.Correoe, telefono.Telefono FROM persona, cliente, telefono
+	WHERE persona.IdPersona = cliente.IdPersona
+	AND persona.IdPersona = telefono.IdPersona;");
+	
 ?>
 
 <!DOCTYPE html>
@@ -67,43 +73,49 @@
 			<!-- Content here-->
 			<div class="container-fluid">
 				<div class="table-responsive">
+				
 					<table class="table table-dark table-sm">
-						<thead>
-							<tr class="text-center roboto-medium">
-								<th>#</th>
-								<th>Cédula</th>
-								<th>NOMBRE</th>
-								<th>DIRECCIÓN</th>
-								<th>EMAIL</th>
-								<th>TELEFONO</th>
-								<th>ACTUALIZAR</th>
-								<th>ELIMINAR</th>
+					<thead>
+						<tr class="text-center roboto-medium">
+							<th>#</th>
+							<th>Cédula</th>
+							<th>NOMBRE</th>
+							<th>DIRECCIÓN</th>
+							<th>EMAIL</th>
+							<th>TELEFONO</th>
+							<th>ACTUALIZAR</th>
+							<th>ELIMINAR</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr class="text-center" >
-								<td>1</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL CLIENTE</td>
-								<td>DIRECCIÓN DEL CLIENTE</td>
-								<td>EMAIL DEL CLIENTE</td>
-								<td>1234567890</td>
-								<td>
-									<a href="#" onclick="fnAjax('client-update.php?v=89234982734');" class="btn btn-success">
-	  									<i class="fas fa-sync-alt"></i>	
-									</a>
-								</td>
-								<td>
-									<form action="">
-										<button type="button" class="btn btn-warning">
-		  									<i class="far fa-trash-alt"></i>
-										</button>
-									</form>
-								</td>
-							</tr>
-						</tbody>
-					</table> 
+					<tbody>
+				<?php
+					while($row = mysqli_fetch_array($datos)){ 
+						echo "<tr class='text-center' > ";
+						echo "<td>". $row['IdPersona'] ."</td>";
+						echo "<td>". $row['Cedula'] ."</td>";
+						echo "<td>". $row['nombreC'] ."</td>";
+						echo "<td>". $row['Direccion'] ."</td>";
+						echo "<td>". $row['Correoe'] ."</td>";
+						echo "<td>". $row['Telefono'] ."</td>";
+						echo "<td>";
+							//echo "<a href='#' onclick='fnAjax('client-update.php?id=". $row['IdPersona'] ."');' class='btn btn-success'>";
+							echo "<a href='#' onclick='fnAjax(\"client-update.php?id=". $row['IdPersona'] ."\");' class='btn btn-success'>"; 
+							echo "<i class='fas fa-sync-alt'></i>";
+							echo "</a>";
+						echo "</td>";
+						echo "<td>";
+							echo "<form action='cliente-borrar.php?id=". $row['IdPersona'] ."'>";
+								echo "<button type='button' class='btn btn-warning'>";
+								echo "<i class='far fa-trash-alt'></i>";
+								echo "</button>";
+							echo "</form>";
+						echo "</td>";
+						echo "</tr>";
+					}?> 
+					</tbody>
+				</table>
 				</div>
+
 				<nav aria-label="Page navigation example">
 					<ul class="pagination justify-content-center">
 						<li class="page-item disabled">

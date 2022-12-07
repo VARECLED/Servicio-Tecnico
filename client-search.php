@@ -1,3 +1,31 @@
+<?php
+	include("session.php");
+
+	if(isset($_POST['search'])){
+		$busqueda=$_POST['busqueda'];
+		
+		$encontrado="SELECT persona.IdPersona, cliente.Cedula, persona.nombreC, persona.Direccion, persona.Correoe, telefono.Telefono 
+		FROM persona, cliente, telefono 
+		WHERE persona.nombreC LIKE '%".$busqueda."%' 
+		AND persona.IdPersona = cliente.IdPersona 
+		AND persona.IdPersona = telefono.IdPersona;";
+
+		$datos=filterRecord($encontrado);
+
+	}else{
+		$encontrado="SELECT persona.IdPersona, cliente.Cedula, persona.nombreC, persona.Direccion, persona.Correoe, telefono.Telefono FROM persona, cliente, telefono
+		WHERE persona.IdPersona = cliente.IdPersona
+		AND persona.IdPersona = telefono.IdPersona;";
+		$datos=filterRecord($encontrado);
+	}
+
+	function filterRecord($encontrado)
+	{
+		include("config.php");
+		$filter_result = mysqli_query($mysqli, $encontrado);
+		return $filter_result;
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -62,18 +90,18 @@
 			
 			<!-- Content here-->
 			<div class="container-fluid">
-				<form class="form-neon" action="">
+				<form class="form-neon" action="" method="POST">
 					<div class="container-fluid">
 						<div class="row justify-content-md-center">
 							<div class="col-12 col-md-6">
 								<div class="form-group">
 									<label for="inputSearch" class="bmd-label-floating">¿Qué cliente estas buscando?</label>
-									<input type="text" class="form-control" name="busqueda-" id="inputSearch" maxlength="30">
+									<input type="text" class="form-control" name="busqueda" id="inputSearch" maxlength="100">
 								</div>
 							</div>
 							<div class="col-12">
 								<p class="text-center" style="margin-top: 40px;">
-									<button type="submit" class="btn btn-raised btn-info"><i class="fas fa-search"></i> &nbsp; BUSCAR</button>
+									<button type="submit" class="btn btn-raised btn-info" name="search"><i class="fas fa-search"></i> &nbsp; BUSCAR</button>
 								</p>
 							</div>
 						</div>
@@ -103,45 +131,53 @@
 			</div>
 
 
+			<!-- Content here-->
 			<div class="container-fluid">
 				<div class="table-responsive">
+				
 					<table class="table table-dark table-sm">
-						<thead>
-							<tr class="text-center roboto-medium">
-								<th>#</th>
-								<th>Cédula</th>
-								<th>NOMBRE</th>
-								<th>DIRECCIÓN</th>
-								<th>EMAIL</th>
-								<th>TELEFONO</th>
-								<th>ACTUALIZAR</th>
-								<th>ELIMINAR</th>
+					<thead>
+						<tr class="text-center roboto-medium">
+							<th>#</th>
+							<th>Cédula</th>
+							<th>NOMBRE</th>
+							<th>DIRECCIÓN</th>
+							<th>EMAIL</th>
+							<th>TELEFONO</th>
+							<th>ACTUALIZAR</th>
+							<th>ELIMINAR</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr class="text-center" >
-								<td>1</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL CLIENTE</td>
-								<td>DIRECCIÓN DEL CLIENTE</td>
-								<td>EMAIL DEL CLIENTE</td>
-								<td>1234567890</td>
-								<td>
-									<a href="client-update.php" class="btn btn-success">
-	  									<i class="fas fa-sync-alt"></i>	
-									</a>
-								</td>
-								<td>
-									<form action="">
-										<button type="button" class="btn btn-warning">
-		  									<i class="far fa-trash-alt"></i>
-										</button>
-									</form>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
+					<tbody>
+				<?php
+				
+					while($row = mysqli_fetch_array($datos)){ 
+						echo "<tr class='text-center' > ";
+						echo "<td>". $row['IdPersona'] ."</td>";
+						echo "<td>". $row['Cedula'] ."</td>";
+						echo "<td>". $row['nombreC'] ."</td>";
+						echo "<td>". $row['Direccion'] ."</td>";
+						echo "<td>". $row['Correoe'] ."</td>";
+						echo "<td>". $row['Telefono'] ."</td>";
+						echo "<td>";
+							echo "<a href='#' onclick='fnAjax(\"client-update.php?id=". $row['IdPersona'] ."\");' class='btn btn-success'>";
+							echo "<i class='fas fa-sync-alt'></i>";
+							echo "</a>";
+						echo "</td>";
+						echo "<td>";
+							echo "<form action='client-borrar.php?id=". $row['IdPersona'] ."'>";
+								echo "<button type='button' class='btn btn-warning'>";
+								echo "<i class='far fa-trash-alt'></i>";
+								echo "</button>";
+							echo "</form>";
+						echo "</td>";
+						echo "</tr>";
+					}
+					?> 
+					</tbody>
+				</table>
+			</div>
+
 				<nav aria-label="Page navigation example">
 					<ul class="pagination justify-content-center">
 						<li class="page-item disabled">

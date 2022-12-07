@@ -1,6 +1,7 @@
 //Funciones AJAX
     //Funcion para llamado a home
-function fnAjax(url){       
+function fnAjax(url){
+    //alert(url);       
     var ajaxRequest = new XMLHttpRequest();
     ajaxRequest.onreadystatechange = function(){
         if(ajaxRequest.readyState==4 && ajaxRequest.status==200){
