@@ -70,6 +70,12 @@
 								<li>
 									<a href="#" onclick="fnAjax('client-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar cliente</a>
 								</li>
+								<li>
+									<a href="xml-cliente.php"><i class="fas fa-file-download fa-fw"></i> &nbsp; Descargar XML</a>
+								</li>
+								<li>
+									<a href="json-cliente.php"><i class="fas fa-file-download fa-fw"></i> &nbsp; Descargar JSON</a>
+								</li>
 							</ul>
 						</li>
 
@@ -160,7 +166,7 @@
 					<i class="fab fa-dashcube fa-fw"></i> &nbsp; Bienvenido
 				</h3>
 				<p class="text-justify">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nostrum rerum animi natus beatae ex. Culpa blanditiis tempore amet alias placeat, obcaecati quaerat ullam, sunt est, odio aut veniam ratione.
+					ACTUALMENTE SOLO FUNCIONA LAS FUNCIONES DE CLIENTES, LAS DEMAS FUNCIONES ESTAN EN PROCESO. GRACIAS POR LA COMPRENSIÓN.
 				</p>
 				</div>
 			
