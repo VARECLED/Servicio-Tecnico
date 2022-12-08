@@ -98,14 +98,14 @@
 						echo "<td>". $row['Correoe'] ."</td>";
 						echo "<td>". $row['Telefono'] ."</td>";
 						echo "<td>";
-							//echo "<a href='#' onclick='fnAjax('client-update.php?id=". $row['IdPersona'] ."');' class='btn btn-success'>";
 							echo "<a href='#' onclick='fnAjax(\"client-update.php?id=". $row['IdPersona'] ."\");' class='btn btn-success'>"; 
 							echo "<i class='fas fa-sync-alt'></i>";
 							echo "</a>";
 						echo "</td>";
 						echo "<td>";
-							echo "<form action='cliente-borrar.php?id=". $row['IdPersona'] ."'>";
-								echo "<button type='button' class='btn btn-warning'>";
+							//echo "<form action='cliente-borrar.php?id=". $row['IdPersona'] ."'>";
+							echo "<form action=''";
+								echo "<button type='button' class='btn btn-warning' onclick='fnAjax(\"cliente-borrar.php?id=". $row['IdPersona'] ."\");'>";
 								echo "<i class='far fa-trash-alt'></i>";
 								echo "</button>";
 							echo "</form>";

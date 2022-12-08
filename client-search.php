@@ -90,7 +90,7 @@
 			
 			<!-- Content here-->
 			<div class="container-fluid">
-				<form class="form-neon" action="" method="POST">
+				<form class="form-neon" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" >
 					<div class="container-fluid">
 						<div class="row justify-content-md-center">
 							<div class="col-12 col-md-6">
@@ -165,8 +165,8 @@
 							echo "</a>";
 						echo "</td>";
 						echo "<td>";
-							echo "<form action='client-borrar.php?id=". $row['IdPersona'] ."'>";
-								echo "<button type='button' class='btn btn-warning'>";
+							echo "<form action=''>";
+								echo "<button type='button' onclick='fnAjax(\"cliente-borrar.php?id=". $row['IdPersona'] ."\");' class='btn btn-warning'>";
 								echo "<i class='far fa-trash-alt'></i>";
 								echo "</button>";
 							echo "</form>";
