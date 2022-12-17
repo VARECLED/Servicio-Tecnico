@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Actualizar item</title>
+    <title>CB | Actualizar Atención a un Equipo</title>
+	
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -38,7 +41,7 @@
 		<!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR ITEM
+                    <i class="fas fa-sync-alt fa-fw"></i> &nbsp; ACTUALIZAR ATENCIÓN A UN EQUIPO
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque laudantium necessitatibus eius iure adipisci modi distinctio. Earum repellat iste et aut, ullam, animi similique sed soluta tempore cum quis corporis!
@@ -47,7 +50,7 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN A EQUIPO</a>
+                        <a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVA ATENCIÓN A EQUIPO</a>
                     </li>
                     <li>
                         <a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
@@ -62,43 +65,52 @@
             <div class="container-fluid">
 				<form action="" class="form-neon" autocomplete="off">
 					<fieldset>
-						<legend><i class="far fa-plus-square"></i> &nbsp; Información del item</legend>
+						<legend><i class="far fa-plus-square"></i> &nbsp; Atención de Equipo</legend>
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-12 col-md-4">
 									<div class="form-group">
-										<label for="item_codigo" class="bmd-label-floating">Códido</label>
-										<input type="text" pattern="[a-zA-Z0-9-]{1,45}" class="form-control" name="item_codigo" id="item_codigo" maxlength="45">
-									</div>
-								</div>
-								
-								<div class="col-12 col-md-4">
-									<div class="form-group">
-										<label for="item_nombre" class="bmd-label-floating">Nombre</label>
-										<input type="text" pattern="[a-zA-záéíóúÁÉÍÓÚñÑ0-9 ]{1,140}" class="form-control" name="item_nombre" id="item_nombre" maxlength="140">
+										<label for="atencion_fecha" class="bmd-label-floating">Fecha de Entrega</label>
+										<input type="date" class="form-control" name="atencion_fecha" id="atencion_fecha" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-4">
 									<div class="form-group">
-										<label for="item_stock" class="bmd-label-floating">Stock</label>
-										<input type="num" pattern="[0-9]{1,9}" class="form-control" name="item_stock" id="item_stock" maxlength="9">
+										<label for="atencion_orden" class="bmd-label-floating">No. Orden</label>
+										<input type="text" pattern="[a-zA-Z0-9-]{1,45}" class="form-control" name="atencion_orden" id="atencion_orden" maxlength="45">
 									</div>
 								</div>
-								<div class="col-12 col-md-6">
+								<div class="col-12 col-md-4">
 									<div class="form-group">
-										<label for="item_estado" class="bmd-label-floating">Estado</label>
-										<select class="form-control" name="item_estado" id="item_estado">
+										<label for="atencion_producto" class="bmd-label-floating">Producto</label>
+										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,30}" class="form-control" name="atencion_producto" id="atencion_producto" maxlength="30">
+									</div>
+								</div>
+								<div class="col-12 col-md-12">
+									<div class="form-group">
+										<label for="serv_nombre" class="bmd-label-floating">Nombre Completo</label>
+										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}" class="form-control" name="serv_nombre" id="serv_nombre" maxlength="100" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-12">
+									<div class="form-group">
+										<label for="atencion_trabajo" class="bmd-label-floating">Trabajo a realizar</label>
+										<input type="text" pattern="[a-zA-záéíóúÁÉÍÓÚñÑ0-9()- ]{1,190}" class="form-control" name="atencion_trabajo" id="atencion_trabajo" maxlength="190">
+									</div>
+								</div>
+								<div class="col-12 col-md-12">
+									<div class="form-group">
+										<label for="serv_detalle" class="bmd-label-floating">Detalle de lo que se realizó</label>
+										<input type="text" pattern="[a-zA-záéíóúÁÉÍÓÚñÑ0-9()- ]{1,190}" class="form-control" name="serv_detalle" id="serv_detalle" maxlength="190">
+									</div>
+								</div>
+								<div class="col-12 col-md-4">
+									<label for="serv_estado" class="bmd-label-floating">Se resolvio el problema</label>
+										<select class="form-control" name="serv_estado" id="serv_estado">
 											<option value="" selected="" disabled="">Seleccione una opción</option>
-											<option selected="" value="Habilitado">Habilitado</option>
-											<option value="Deshabilitado">Deshabilitado</option>
+											<option selected="" value="Habilitado">Si</option>
+											<option value="Deshabilitado">No</option>
 										</select>
-									</div>
-								</div>
-								<div class="col-12 col-md-6">
-									<div class="form-group">
-										<label for="item_detalle" class="bmd-label-floating">Detalle</label>
-										<input type="text" pattern="[a-zA-záéíóúÁÉÍÓÚñÑ0-9()- ]{1,190}" class="form-control" name="item_detalle" id="item_detalle" maxlength="190">
-									</div>
 								</div>
 							</div>
 						</div>

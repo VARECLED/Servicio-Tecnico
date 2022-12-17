@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Lista de items</title>
+    <title>CB | Lista de atención a equipos</title>
+	
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -39,7 +42,7 @@
             <!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ITEMS
+                    <i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIÓN DE EQUIPOS
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum delectus eos enim numquam fugit optio accusantium, aperiam eius facere architecto facilis quibusdam asperiores veniam omnis saepe est et, quod obcaecati.
@@ -48,7 +51,7 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; AGREGAR ATENCIÓN DE EQUIPO</a>
+                        <a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVA ATENCIÓN DE EQUIPO</a>
                     </li>
                     <li>
                         <a class="active" href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE ATENCIONES</a>
@@ -81,60 +84,6 @@
 								<td>20</td>
 								<td>
                                     <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>2</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>57</td>
-								<td>
-                                    <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>3</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>81</td>
-								<td>
-                                    <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>4</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>90</td>
-								<td>
-                                    <a href="#" onclick="fnAjax('atencion-update.php?v=89234982734');" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 
                                     </a>
                                 </td>

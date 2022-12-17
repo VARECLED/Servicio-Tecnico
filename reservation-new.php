@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Nuevo prestamo</title>
+    <title>CB | Nuevo Retiro</title>
+	
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -38,7 +41,7 @@
         <!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO
+                    <i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO RETIRO
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quod harum vitae, fugit quo soluta. Molestias officiis voluptatum delectus doloribus at tempore, iste optio quam recusandae numquam non inventore dolor.
@@ -47,16 +50,16 @@
             <div class="container-fluid">
                 <ul class="full-box list-unstyled page-nav-tabs">
                     <li>
-                        <a class="active" href="#" onclick="fnAjax('reservation-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO PRÉSTAMO</a>
+                        <a class="active" href="#" onclick="fnAjax('reservation-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; NUEVO RETIRO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; LISTA DE PRÉSTAMOS</a>
+                        <a href="#" onclick="fnAjax('reservation-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; PRODUCTOS LISTOS NO RETIRADOS</a>
                     </li>
                     <li>
-                        <a href="#"onclick="fnAjax('reservation-search.php?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR PRÉSTAMOS</a>
+                        <a href="#"onclick="fnAjax('reservation-search.php?v=89234982734');"><i class="fas fa-search-dollar fa-fw"></i> &nbsp; BUSCAR RETIRO</a>
                     </li>
                     <li>
-                        <a href="#" onclick="fnAjax('reservation-pending.php?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRÉSTAMOS PENDIENTES</a>
+                        <a href="#" onclick="fnAjax('reservation-pending.php?v=89234982734');"><i class="fas fa-hand-holding-usd fa-fw"></i> &nbsp; PRODUCTOS NO RETIRADOS (30 días)</a>
                     </li>
                 </ul>
             </div>
@@ -65,102 +68,53 @@
             <div class="container-fluid">
             	<div class="container-fluid form-neon">
                     <div class="container-fluid">
-                        <p class="text-center roboto-medium">AGREGAR CLIENTE O ITEMS</p>
-                        <p class="text-center">
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCliente"><i class="fas fa-user-plus"></i> &nbsp; Agregar cliente</button>
-                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalItem"><i class="fas fa-box-open"></i> &nbsp; Agregar item</button>
-                        </p>
-                        <div>
-                            <span class="roboto-medium">CLIENTE:</span> 
-                            <span class="text-danger">&nbsp; <i class="fas fa-exclamation-triangle"></i> Seleccione un cliente</span>
-                  			<form action="" style="display: inline-block !important;">
-                            	Carlos Alfaro
-                                <button type="button" class="btn btn-danger"><i class="fas fa-user-times"></i></button>
-                            </form>
-                        </div>
-                        <div class="table-responsive">
-                            <table class="table table-dark table-sm">
-                                <thead>
-                                    <tr class="text-center roboto-medium">
-                                        <th>ITEM</th>
-                                        <th>CANTIDAD</th>
-                                        <th>ELIMINAR</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center" >
-                                        <td>NOMBRE DEL ITEM</td>
-                                        <td>7</td>
-                                        <td>
-                                            <form action="">
-                                                <button type="button" class="btn btn-warning">
-                                                    <i class="far fa-trash-alt"></i>
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                    <tr class="text-center" >
-                                        <td>NOMBRE DEL ITEM</td>
-                                        <td>9</td>
-                                        <td>
-                                            <form action="">
-                                                <button type="button" class="btn btn-warning">
-                                                    <i class="far fa-trash-alt"></i>
-                                                </button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-					<form action="" autocomplete="off">
+                        <form action="" autocomplete="off">
 						<fieldset>
-							<legend><i class="far fa-plus-square"></i> &nbsp; Información del prestamo</legend>
+							<legend><i class="far fa-plus-square"></i> &nbsp; Información del retiro</legend>
 							<div class="container-fluid">
 								<div class="row">
-									<div class="col-12 col-md-4">
-										<div class="form-group">
-											<label for="prestamo_fecha_inicio">Fecha de reserva</label>
-											<input type="date" class="form-control" name="prestamo_fecha_inicio" id="admin-dni">
-										</div>
-									</div>
-									
-									<div class="col-12 col-md-4">
-										<div class="form-group">
-											<label for="prestamo_fecha_final">Fecha de entrega</label>
-											<input type="date" class="form-control" name="prestamo_fecha_final" id="prestamo_fecha_final">
-										</div>
-									</div>
-									<div class="col-12 col-md-4">
-	                                    <div class="form-group">
-	                                        <label for="prestamo_estado" class="bmd-label-floating">Estado</label>
-	                                        <select class="form-control" name="item_estado" id="item_estado">
-	                                            <option value="" selected="" disabled="">Seleccione una opción</option>
-	                                            <option value="Prestamo">Préstamo</option>
-	                                            <option value="Reservacion">Reservación</option>
-	                                            <option value="Finalizado">Finalizado</option>
-	                                        </select>
-	                                    </div>
-	                                </div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="prestamo_total" class="bmd-label-floating">Total a pagar</label>
-											<input type="text" pattern="[0-9.]{1,10}" class="form-control" name="prestamo_total" id="prestamo_total" maxlength="10">
-										</div>
-									</div>
-	                                <div class="col-12 col-md-6">
-	                                    <div class="form-group">
-	                                        <label for="prestamo_pagado" class="bmd-label-floating">Total depositado</label>
-	                                        <input type="text" pattern="[0-9.]{1,10}" class="form-control" name="prestamo_pagado" id="prestamo_pagado" maxlength="10">
-	                                    </div>
-	                                </div>
-	                                <div class="col-12">
-	                                    <div class="form-group">
-	                                        <label for="prestamo_observacion" class="bmd-label-floating">Observación</label>
-	                                        <input type="text" pattern="[a-zA-z0-9áéíóúÁÉÍÓÚñÑ#() ]{1,400}" class="form-control" name="prestamo_observacion" id="prestamo_observacion" maxlength="400">
-	                                    </div>
-	                                </div>
+                                    <div class="col-12 col-md-4">
+									    <div class="form-group">
+										    <label for="retiro_orden" class="bmd-label-floating">No. Orden</label>
+										    <input type="text" class="form-control" name="retiro_orden" id="retiro_orden">
+									    </div>
+								    </div>
+                                    <div class="col-12 col-md-8">
+									    <div class="form-group">
+										    <label for="retiro_nombre" class="bmd-label-floating">Cliente</label>
+										    <input type="text" class="form-control" name="retiro_nombre" id="retiro_nombre" required>
+									    </div>
+								    </div>
+                                    <div class="col-12 col-md-12">
+									    <div class="form-group">
+										    <label for="retiro_detalle" class="bmd-label-floating">Detalle de lo que se realizó</label>
+										    <input type="text" class="form-control" name="retiro_detalle" id="retiro_detalle">
+									    </div>
+								    </div>
+                                    <div class="col-12 col-md-4">
+									    <div class="form-group">
+										    <label for="retiro_total" class="bmd-label-floating">Total</label>
+										    <input type="number" class="form-control" name="retiro_total" id="serv_total" required>
+									    </div>
+								    </div>
+								    <div class="col-12 col-md-4">
+									    <div class="form-group">
+										    <label for="retiro_abono" class="bmd-label-floating">Abono</label>
+										    <input type="number" class="form-control" name="retiro_abono" id="retiro_abono" required>
+									    </div>
+								    </div>
+                                    <div class="col-12 col-md-4">
+									    <div class="form-group">
+										    <label for="retiro_debe" class="bmd-label-floating">Debe</label>
+										    <input type="number" class="form-control" name="retiro_debe" id="retiro_debe" required>
+									    </div>
+								    </div>
+                                    <div class="col-12 col-md-4">
+									    <div class="form-group">
+										    <label for="retiro_paga" class="bmd-label-floating">Paga</label>
+										    <input type="number" class="form-control" name="retiro_paga" id="retiro_paga" required>
+									    </div>
+								    </div> 
 								</div>
 							</div>
 						</fieldset>
@@ -168,151 +122,18 @@
 						<p class="text-center" style="margin-top: 40px;">
 							<button type="reset" class="btn btn-raised btn-secondary btn-sm"><i class="fas fa-paint-roller"></i> &nbsp; LIMPIAR</button>
 							&nbsp; &nbsp;
-							<button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; GUARDAR</button>
+							<button type="submit" class="btn btn-raised btn-info btn-sm"><i class="far fa-save"></i> &nbsp; REGISTRAR</button>
 						</p>
-					</form>
+					    </form>
             	</div>
 			</div>
-
-
-            <!-- MODAL CLIENTE -->
-            <div class="modal fade" id="ModalCliente" tabindex="-1" role="dialog" aria-labelledby="ModalCliente" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="ModalCliente">Agregar cliente</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="form-group">
-                                    <label for="agregar_cliente" class="bmd-label-floating">DNI, Nombre, Apellido, Telefono</label>
-                                    <input type="text" pattern="[a-zA-z0-9áéíóúÁÉÍÓÚñÑ#() ]{1,30}" class="form-control" name="agregar_cliente" id="agregar_cliente" maxlength="30">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="container-fluid">
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered table-sm">
-                                        <tbody>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del cliente</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del cliente</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del cliente</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del cliente</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-user-plus"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- MODAL CLIENTE -->
-            <div class="modal fade" id="ModalItem" tabindex="-1" role="dialog" aria-labelledby="ModalItem" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="ModalItem">Agregar item</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="form-group">
-                                    <label for="agregar_item" class="bmd-label-floating">Código, Nombre</label>
-                                    <input type="text" pattern="[a-zA-z0-9áéíóúÁÉÍÓÚñÑ#() ]{1,30}" class="form-control" name="agregar_item" id="agregar_item" maxlength="30">
-                                </div>
-                            </div>
-                            <br>
-                            <div class="container-fluid">
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-bordered table-sm">
-                                        <tbody>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del item</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-box-open"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del item</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-box-open"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del item</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-box-open"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                            <tr class="text-center">
-                                                <td>000000000000 - Nombre del item</td>
-                                                <td>
-                                                    <form action="">
-                                                        <button type="button" class="btn btn-primary"><i class="fas fa-box-open"></i></button>
-                                                    </form>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
 	<!--=============================================
 	=            Include JavaScript files           =
 	==============================================-->
 	<!-- jQuery V3.4.1 -->
 	<script src="./js/jquery-3.4.1.min.js" ></script>
+    <script src="./js/jquery.validate.min.js"></script>
 
 	<!-- popper -->
 	<script src="./js/popper.min.js" ></script>

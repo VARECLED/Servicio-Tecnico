@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Buscar item</title>
+    <title>CB | Buscar Servicio</title>
+	
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.png">
 
     <!-- Normalize V8.0.1 -->
     <link rel="stylesheet" href="./css/normalize.css">
@@ -38,7 +41,7 @@
         <!-- Page header -->
             <div class="full-box page-header">
                 <h3 class="text-left">
-                    <i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR ITEM
+                    <i class="fas fa-search fa-fw"></i> &nbsp; BUSCAR SERVICIO
                 </h3>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum delectus eos enim numquam fugit optio accusantium, aperiam eius facere architecto facilis quibusdam asperiores veniam omnis saepe est et, quod obcaecati.
@@ -65,7 +68,7 @@
                         <div class="row justify-content-md-center">
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="inputSearch" class="bmd-label-floating">¿Qué item estas buscando?</label>
+                                    <label for="inputSearch" class="bmd-label-floating">¿Qué servicio estas buscando?</label>
                                     <input type="text" class="form-control" name="busqueda-" id="inputSearch" maxlength="30">
                                 </div>
                             </div>
@@ -107,9 +110,11 @@
 						<thead>
 							<tr class="text-center roboto-medium">
 								<th>#</th>
-								<th>CÓDIGO</th>
 								<th>NOMBRE</th>
-								<th>STOCK</th>
+								<th>PRODUCTO</th>
+								<th>TELEFONO</th>
+                                <th>ABONO</th>
+                                <th>TOTAL</th>
 								<th>ACTUALIZAR</th>
 								<th>ELIMINAR</th>
 							</tr>
@@ -117,63 +122,11 @@
 						<tbody>
 							<tr class="text-center" >
 								<td>1</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>20</td>
-								<td>
-                                    <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>2</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>57</td>
-								<td>
-                                    <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>3</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>81</td>
-								<td>
-                                    <a href="item-update.php" class="btn btn-success">
-                                        <i class="fas fa-sync-alt"></i> 
-                                    </a>
-                                </td>
-                                <td>
-                                    <form action="">
-                                        <button type="button" class="btn btn-warning">
-                                            <i class="far fa-trash-alt"></i>
-                                        </button>
-                                    </form>
-                                </td>
-							</tr>
-							<tr class="text-center" >
-								<td>4</td>
-								<td>012342567</td>
-								<td>NOMBRE DEL ITEM</td>
-								<td>90</td>
+								<td>NOMBRE</td>
+								<td>PRODUCTO</td>
+								<td>TELEFONO</td>
+                                <td>ABONO</td>
+                                <td>TOTAL</td>
 								<td>
                                     <a href="item-update.php" class="btn btn-success">
                                         <i class="fas fa-sync-alt"></i> 

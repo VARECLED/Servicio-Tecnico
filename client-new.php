@@ -75,7 +75,7 @@
 								</div>
 								<div class="col-12 col-md-8">
 									<div class="form-group">
-										<label for="cliente_nombre" class="bmd-label-floating">Nombre y Apellido</label>
+										<label for="cliente_nombre" class="bmd-label-floating">Nombre Completo</label>
 										<input type="text" pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{1,100}" class="form-control" name="cliente_nombre" id="cliente_nombre" maxlength="100" required>
 									</div>
 								</div>

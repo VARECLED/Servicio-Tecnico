@@ -98,13 +98,13 @@
 							<a href="#" class="nav-btn-submenu"><i class="fas fa-exclamation-triangle fa-fw"></i> &nbsp; Atencion a Equipos<i class="fas fa-chevron-down"></i></a>
 							<ul>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Agregar Servicio</a>
+									<a href="#" onclick="fnAjax('atencion-new.php?v=89234982734');"><i class="fas fa-plus fa-fw"></i> &nbsp; Nueva Atención</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Servicio</a>
+									<a href="#" onclick="fnAjax('atencion-list.php?v=89234982734');"><i class="fas fa-clipboard-list fa-fw"></i> &nbsp; Lista de Atenciones</a>
 								</li>
 								<li>
-									<a href="#" onclick="fnAjax('atencion-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar servicio</a>
+									<a href="#" onclick="fnAjax('atencion-search.php?v=89234982734');"><i class="fas fa-search fa-fw"></i> &nbsp; Buscar Atención</a>
 								</li>
 							</ul>
 						</li>
